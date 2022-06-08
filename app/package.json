@@ -4,7 +4,7 @@
     "description": "Web browser built with Node.JS",
     "version": "0.0.1",
     "window": {
-        "title": "Macium",
+        "title": "Macium Browser",
         "icon": "img/favicon-raw.png",
         "toolbar": true,
         "frame": true,

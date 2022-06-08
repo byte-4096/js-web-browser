@@ -3,12 +3,12 @@ var menu = new nw.Menu();
 
 // Add some items with label
 menu.append(new nw.MenuItem({
-    label: 'Item A',
+    label: 'Copy',
     click: function () {
-        alert('You have clicked at "Item A"');
+        alert('You have tried to copy something');
     }
 }));
-menu.append(new nw.MenuItem({ label: 'Item B' }));
+menu.append(new nw.MenuItem({ label: 'Paste' }));
 menu.append(new nw.MenuItem({ type: 'separator' }));
 menu.append(new nw.MenuItem({ label: 'Item C' }));
 
