@@ -1,0 +1,16 @@
+{
+    "main": "index.html",
+    "name": "Macium",
+    "description": "Web browser built with Node.JS",
+    "version": "0.0.1",
+    "window": {
+        "title": "Macium",
+        "icon": "img/favicon-raw.png",
+        "toolbar": true,
+        "frame": true,
+        "width": 800,
+        "height": 500,
+        "min_width": 400,
+        "min_height": 200
+    }
+}
