@@ -1,5 +1,5 @@
 {
-    "main": "index.html",
+    "main": "browser.html",
     "name": "Macium",
     "description": "Web browser built with Node.JS",
     "version": "0.0.1",
