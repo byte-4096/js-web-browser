@@ -1,5 +1,7 @@
 // Create an empty context menu
 var menu = new nw.Menu();
+// Get the current window
+var win = nw.Window.get();
 
 // Add some items with label
 menu.append(new nw.MenuItem({
@@ -10,7 +12,12 @@ menu.append(new nw.MenuItem({
 }));
 menu.append(new nw.MenuItem({ label: 'Paste' }));
 menu.append(new nw.MenuItem({ type: 'separator' }));
-menu.append(new nw.MenuItem({ label: 'Item C' }));
+menu.append(new nw.MenuItem({ 
+    label: 'Inspect',
+    click: function () {
+        win.showDevTools();
+    }
+}));
 
 // Hooks the "contextmenu" event
 document.body.addEventListener('contextmenu', function (ev) {
@@ -21,3 +28,4 @@ document.body.addEventListener('contextmenu', function (ev) {
 
     return false;
 }, false);
+

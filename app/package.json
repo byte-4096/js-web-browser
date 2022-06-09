@@ -7,7 +7,7 @@
         "title": "Macium Browser",
         "icon": "img/favicon-raw.png",
         "toolbar": true,
-        "frame": true,
+        "frame": false,
         "width": 800,
         "height": 500,
         "min_width": 400,
