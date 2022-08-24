@@ -2,80 +2,32 @@
 <html>
     <head>
         <title>Macium</title>
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tabs.css">
+        <link rel="stylesheet" href="css/devTools.css">
     </head>
     <body>
+        <div id="windowControls">
+            <button onclick="newTab()">New Tab</button>
+            <button onclick="win.reload()">Reload</button>
+        </div>
         <div id="tabBar">
             <div class="wrapper">
                 <div class="tabs">
-                    <div class="tab">
-                        <input
-                            type="radio"
-                            name="css-tabs"
-                            id="tab-1"
-                            checked
-                            class="tab-switch"
-                        />
-                        <label for="tab-1" class="tab-label">Tab One</label>
-                        <div class="tab-content">
-                            <p>page</p>
-                            <button onclick="win.reload()">Reload</button>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input
-                            type="radio"
-                            name="css-tabs"
-                            id="tab-2"
-                            class="tab-switch"
-                        />
-                        <label for="tab-2" class="tab-label">Tab Two</label>
-                        <div class="tab-content">
-                            My father now and then sending me small sums of
-                            money, I laid them out in learning navigation, and
-                            other parts of the mathematics, useful to those who
-                            intend to travel, as I always believed it would be,
-                            some time or other, my fortune to do.
-                            <button onclick="win.moveTo(2000, 5000)">Move</button>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input
-                            type="radio"
-                            name="css-tabs"
-                            id="tab-3"
-                            class="tab-switch"
-                        />
-                        <label for="tab-3" class="tab-label">Tab Three</label>
-                        <div class="tab-content">
-                            When I left Mr. Bates, I went down to my father:
-                            where, by the assistance of him and my uncle John,
-                            and some other relations, I got forty pounds, and a
-                            promise of thirty pounds a year to maintain me at
-                            Leyden: there I studied physic two years and seven
-                            months, knowing it would be useful in long voyages.
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input
-                            type="radio"
-                            name="css-tabs"
-                            id="tab-4"
-                            checked
-                            class="tab-switch"
-                        />
-                        <label for="tab-4" class="tab-label">Tab Four</label>
-                        <div class="tab-content">
-                            My father had a small estate in Nottinghamshire: I
-                            was the third of five sons. He sent me to Emanuel
-                            College in Cambridge at fourteen years old, where I
-                            resided three years, and applied myself close to my
-                            studies; but the cbob
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+        <div id="tools">
+            <button onclick="closeDevTools()">x</button>
+            <h2>Developer Tools:</h2>
+            <div id="log">
+                <h3>MaceLog:</h3>
+            </div>
+        </div>
     </body>
+    <script src="js/devTools.js"></script>
+    <script src="js/tabs.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rightClick.js"></script>
 </html>

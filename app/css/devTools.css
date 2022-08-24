@@ -1,0 +1,73 @@
+#tools {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30vh;
+	width: 100vw;
+	background-color: rgb(233, 250, 255);
+	border: 2px solid gray;
+	padding: 10px;
+	text-align: left;
+	overflow-y: scroll;
+}
+
+#log {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	height: 30vh;
+	width: 40vw;
+	/* background-color: red; */
+	background-color: rgb(233, 250, 255);
+	border: 2px solid gray;
+	padding: 10px;
+	text-align: left;
+	overflow-y: scroll;
+}
+
+.error {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: red;
+	padding: 5px;
+	background-color: rgb(254, 228, 228);
+	user-select: text;
+}
+
+.message {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	background-color: rgb(244, 244, 244);
+	user-select: text;
+}
+
+.errorIcon {
+	color: rgb(254, 228, 228);
+	background-color: red;
+	font-weight: bold;
+	border-radius: 100%;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+}
+
+.infoIcon {
+	color: rgb(244, 244, 244);
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 100%;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+}
+
+.date {
+	min-width: 10vw;
+	color: lightgray;
+	font-size: small;
+}
